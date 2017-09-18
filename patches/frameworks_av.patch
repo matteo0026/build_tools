@@ -126,10 +126,10 @@ diff --git a/services/audioflinger/AudioFlinger.cpp b/services/audioflinger/Audi
 index cbc5f7ea1..8c671e4e3 100644
 --- a/services/audioflinger/AudioFlinger.cpp
 +++ b/services/audioflinger/AudioFlinger.cpp
-@@ -2146,6 +2146,12 @@ sp<AudioFlinger::RecordThread> AudioFlinger::openInput_l(audio_module_handle_t m
+@@ -2264,5 +2270,1 @@ sp<AudioFlinger::RecordThread> AudioFlinger::openInput_l(audio_module_handle_t m
      audio_config_t halconfig = *config;
-     audio_hw_device_t *inHwHal = inHwDev->hwDevice();
-     audio_stream_in_t *inStream = NULL;
+     sp<DeviceHalInterface> inHwHal = inHwDev->hwDevice();
+     sp<StreamInHalInterface> inStream;
 +
 +#ifdef CAPRI_HWC
 +    ALOGD("Forcing channel mask to mono on capri");

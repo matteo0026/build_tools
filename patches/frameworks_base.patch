@@ -15,7 +15,7 @@ diff --git a/telephony/java/android/telephony/TelephonyManager.java b/telephony/
 index b6700d87640..17fb918603c 100644
 --- a/telephony/java/android/telephony/TelephonyManager.java
 +++ b/telephony/java/android/telephony/TelephonyManager.java
-@@ -3743,49 +3743,19 @@ public class TelephonyManager {
+@@ -4128,6 +4174,1 @@ public class TelephonyManager {
       * @hide
       */
      public static void setTelephonyProperty(int phoneId, String property, String value) {
@@ -70,7 +70,7 @@ index b6700d87640..17fb918603c 100644
      }
  
      /**
-@@ -3882,15 +3852,22 @@ public class TelephonyManager {
+@@ -4266,6 +4290,1 @@ public class TelephonyManager {
       * @hide
       */
      public static String getTelephonyProperty(int phoneId, String property, String defaultVal) {
@@ -99,8 +99,6 @@ index b6700d87640..17fb918603c 100644
 +
 +        return propVal.isEmpty() ? defaultVal : propVal;
      }
- 
-     /** @hide */
 -- 
 2.11.0
 
