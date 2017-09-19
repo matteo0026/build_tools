@@ -17,15 +17,13 @@ diff --git a/src/java/com/android/internal/telephony/Phone.java b/src/java/com/a
 index e6168cde..73579b95 100644
 --- a/src/java/com/android/internal/telephony/Phone.java
 +++ b/src/java/com/android/internal/telephony/Phone.java
-@@ -237,6 +237,7 @@ public abstract class Phone extends Handler implements PhoneInternalInterface {
-     private boolean mDnsCheckDisabled;
-     public DcTracker mDcTracker;
+@@ -243,6 +243,7 @@ public abstract class Phone extends Handler implements PhoneInternalInterface {
      private boolean mDoesRilSendMultipleCallRing;
 +    private boolean mDoesRilSendCallRing;
      private int mCallRingContinueToken;
      private int mCallRingDelay;
      private boolean mIsVoiceCapable = true;
-@@ -478,6 +479,11 @@ public abstract class Phone extends Handler implements PhoneInternalInterface {
+@@ -491,6 +491,11 @@ public abstract class Phone extends Handler implements PhoneInternalInterface {
                  TelephonyProperties.PROPERTY_RIL_SENDS_MULTIPLE_CALL_RING, true);
          Rlog.d(LOG_TAG, "mDoesRilSendMultipleCallRing=" + mDoesRilSendMultipleCallRing);
  

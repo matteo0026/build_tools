@@ -37,7 +37,7 @@ diff --git a/src/com/android/phone/MobileNetworkSettings.java b/src/com/android/
 index 58aeeb4..16c1780 100644
 --- a/src/com/android/phone/MobileNetworkSettings.java
 +++ b/src/com/android/phone/MobileNetworkSettings.java
-@@ -815,6 +815,7 @@ public class MobileNetworkSettings extends PreferenceActivity
+@@ -922,6 +922,7 @@ public class MobileNetworkSettings extends PreferenceActivity
              switch (buttonNetworkMode) {
                  case Phone.NT_MODE_WCDMA_PREF:
                  case Phone.NT_MODE_GSM_ONLY:
@@ -45,7 +45,7 @@ index 58aeeb4..16c1780 100644
                  case Phone.NT_MODE_LTE_GSM_WCDMA:
                  case Phone.NT_MODE_LTE_CDMA_EVDO_GSM_WCDMA:
                  case Phone.NT_MODE_CDMA:
-@@ -1072,12 +1073,22 @@ public class MobileNetworkSettings extends PreferenceActivity
+@@ -1152,12 +1152,22 @@ public class MobileNetworkSettings extends PreferenceActivity
                  mButtonEnabledNetworks.setSummary(R.string.network_3G);
                  break;
              case Phone.NT_MODE_WCDMA_ONLY:
@@ -120,7 +120,7 @@ diff --git a/src/com/android/phone/MobileNetworkSettings.java b/src/com/android/
 index 16c1780..3c1826f 100644
 --- a/src/com/android/phone/MobileNetworkSettings.java
 +++ b/src/com/android/phone/MobileNetworkSettings.java
-@@ -668,6 +668,8 @@ public class MobileNetworkSettings extends PreferenceActivity
+@@ -765,6 +765,8 @@ public class MobileNetworkSettings extends PreferenceActivity
          mButtonPreferredNetworkMode.setValue(Integer.toString(settingsNetworkMode));
          UpdatePreferredNetworkModeSummary(settingsNetworkMode);
          UpdateEnabledNetworksValueAndSummary(settingsNetworkMode);

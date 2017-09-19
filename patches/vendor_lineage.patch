@@ -12,7 +12,7 @@ diff --git a/config/common.mk b/config/common.mk
 index 24460098..d22099fa 100644
 --- a/config/common.mk
 +++ b/config/common.mk
-@@ -307,9 +307,9 @@ ifeq ($(CM_BUILDTYPE), RELEASE)
+@@ -307,9 +307,9 @@ ifeq ($(LINEAGE_BUILDTYPE), RELEASE)
      endif
  else
      ifeq ($(LINEAGE_VERSION_MAINTENANCE),0)
